@@ -1,0 +1,29 @@
+package infoalumnos;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		ArrayList<String> ListaAlumnos=new ArrayList<String>();
+		boolean continuar=true;
+		Alumno a=new Alumno();
+		do
+		{
+			System.out.println("Introduzca nombre");
+			a.getNombre();
+			System.out.println(a.getNombre());
+			
+			
+		}while(continuar==true);
+		
+		for(String item: ListaAlumnos)
+		{
+			
+		}
+
+	}
+
+}

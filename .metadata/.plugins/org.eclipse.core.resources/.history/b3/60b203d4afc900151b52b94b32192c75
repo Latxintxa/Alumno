@@ -1,0 +1,24 @@
+package infoalumnos;
+
+public class Asignatura 
+{
+	private String nombreAsignatura;
+	private String codigoasignatura;
+	
+	
+	public String getNombreAsignatura() {
+		return nombreAsignatura;
+	}
+	public void setNombreAsignatura(String nombreAsignatura) {
+		this.nombreAsignatura = nombreAsignatura;
+	}
+	
+	public String getCodigoasignatura() 
+	{
+		return codigoasignatura;
+	}
+	public void setCodigoasignatura(String codigoasignatura) {
+		this.codigoasignatura = codigoasignatura;
+	}
+
+}

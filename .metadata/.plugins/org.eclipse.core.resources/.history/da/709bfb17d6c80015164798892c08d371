@@ -1,0 +1,13 @@
+package infoalumnos;
+
+public class Notas 
+{
+	private String asignatura;
+	private double[] nota;
+	
+	public Notas(String asignaturas,double[]notas)
+	{
+		this.asignatura=asignatura;
+		this.nota[]=bita[]
+	}
+}

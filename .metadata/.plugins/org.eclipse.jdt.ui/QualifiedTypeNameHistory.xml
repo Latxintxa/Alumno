@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.sound.sampled.AudioFileFormat"/>
+<fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
+<fullyQualifiedTypeName name="Ejercicio.Pato"/>
+<fullyQualifiedTypeName name="Ejercicio.Sonido"/>
+<fullyQualifiedTypeName name="javax.swing.JLayer"/>
+<fullyQualifiedTypeName name="Conduccion.Vehiculo"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="infoalumnos.alumno"/>
+<fullyQualifiedTypeName name="infoalumnos.Alumno"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

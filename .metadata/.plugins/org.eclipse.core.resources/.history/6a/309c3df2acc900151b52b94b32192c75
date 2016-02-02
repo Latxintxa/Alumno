@@ -1,0 +1,44 @@
+package infoalumnos;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		ArrayList<String> ListaAlumnos=new ArrayList<String>();
+		
+		boolean continuar=true;
+		Alumno a=new Alumno();
+		String nombre;
+		String apellido1;
+		String apellido2;
+		
+		
+		
+		do
+		{
+			System.out.println("Introduzca nombre:");
+			nombre=BLS.nextLine();
+			a.setNombre(nombre);
+			
+			System.out.println("Introduzca el primer apellido:");
+			apellido1=BLS.nextLine();
+			a.setApellido1(apellido1);
+			
+			System.out.println("Introduzca el segundo apellido");
+			apellido2=BLS.nextLine();
+			a.setApellido2(apellido2);
+			
+			
+		}while(continuar==true);
+		
+		for(String item: ListaAlumnos)
+		{
+			
+		}
+
+	}
+
+}
