@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.sound.sampled.AudioFileFormat"/>
 <fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
 <fullyQualifiedTypeName name="Ejercicio.Pato"/>
@@ -8,8 +7,19 @@
 <fullyQualifiedTypeName name="javax.swing.JLayer"/>
 <fullyQualifiedTypeName name="Conduccion.Vehiculo"/>
 <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="infoalumnos.alumno"/>
-<fullyQualifiedTypeName name="infoalumnos.Alumno"/>
+<fullyQualifiedTypeName name="infoalumnos.CreaAlumno"/>
+<fullyQualifiedTypeName name="java.lang.management.MemoryNotificationInfo"/>
+<fullyQualifiedTypeName name="Menu_Package.Menu_Class"/>
+<fullyQualifiedTypeName name="Métodos_Paco.metodos_paco"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.awt.Menu"/>
+<fullyQualifiedTypeName name="metodomenu.Principal"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="infoalumnos.BuscaAlumno"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="Validador_de_DNI.Validador_de_DNI"/>
+<fullyQualifiedTypeName name="infoalumnos.MuestraAlumno"/>
+<fullyQualifiedTypeName name="infoalumnos.Alumno"/>
+<fullyQualifiedTypeName name="infoalumnos.Alula"/>
 </qualifiedTypeNameHistroy>
