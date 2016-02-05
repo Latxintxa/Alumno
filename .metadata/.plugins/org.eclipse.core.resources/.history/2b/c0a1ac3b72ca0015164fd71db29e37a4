@@ -1,0 +1,23 @@
+package infoalumnos;
+import java.awt.Menu;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.awt.Menu;
+import Validador_de_DNI.Validador_de_DNI;
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		Menu menu=new Menu();
+		CreaAlumno a=new CreaAlumno();
+		
+		
+		
+		a.CreaAlumno();
+		
+		
+	}
+
+}

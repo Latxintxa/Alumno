@@ -1,0 +1,22 @@
+package infoalumnos;
+
+import java.util.Scanner;
+import java.awt.Menu;
+
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		CreaAlumno a=new CreaAlumno();
+		int respuesta;
+		do
+		{
+		a.CreaAlumno();
+		
+		}while(respuesta!=4);
+		
+	}
+
+}

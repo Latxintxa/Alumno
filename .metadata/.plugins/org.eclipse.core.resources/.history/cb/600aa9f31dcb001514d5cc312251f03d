@@ -1,0 +1,24 @@
+package infoalumnos;
+
+import java.util.ArrayList;
+
+public class BuscaAlumno 
+{
+	ArrayList<Alumno> ListaAlumnos;
+	public void BuscaAlumnoDni(String dni,ArrayList<Alumno>ListaAlumnos)
+	{
+	
+		for(Alumno item:ListaAlumnos)
+		{
+			if(dni.equals(item.getDNI()))
+			{
+				System.out.println(item.fichaAlumno());
+			}else
+			{
+				System.out.println("No se encuentra ninguna coincidencia");
+			}
+			
+	}
+	
+	}
+}

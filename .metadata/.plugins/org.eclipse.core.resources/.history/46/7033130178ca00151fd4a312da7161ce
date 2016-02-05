@@ -1,0 +1,16 @@
+package infoalumnos;
+
+import java.util.ArrayList;
+
+public class BuscaAlumno 
+{
+	public BuscaAlumno()
+	{
+		ArrayList<Alumno> ListaAlumno;
+		for(Alumno item:ListaAlumno)
+		{
+			
+			System.out.println(item.fichaAlumno());
+		}
+	}
+}

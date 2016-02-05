@@ -1,0 +1,60 @@
+package infoalumnos;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.awt.Menu;
+import Validador_de_DNI.Validador_de_DNI;
+public class Main {
+
+	public static void main(String[] args)
+	{
+		ArrayList<Alumno> ListaAlumnos=new ArrayList<Alumno>();
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		CreaAlumno a=new CreaAlumno();
+		BuscaAlumno buscar=new BuscaAlumno();
+		Validador_de_DNI validar=new Validador_de_DNI();
+		int respuesta=0;
+		String dni;
+		
+		do
+		{
+			if(respuesta==1)
+			{
+				a.CreaAlumno();
+			}
+			
+			
+			if(respuesta==2)
+			{
+				for(Alumno item:ListaAlumnos)
+				{
+					System.out.println(item.fichaAlumno());
+				}
+			}
+			
+			
+			if(respuesta==3)
+			{
+				do
+				{
+				System.out.println("Introduzca el DNI a buscar");
+				dni=BLS.nextLine();
+				validar.ValidarDNI(dni);
+				
+				}while(!validar.ValidarDNI(dni));
+				buscar.BuscaAlumnoDni(dni);
+			}
+			
+			
+			if(respuesta!=1&&respuesta!=2&&respuesta!=3&&respuesta!=4)
+			{
+				System.out.println("Error,Su eleccion no esta entre los parametros posibles");
+			}
+			
+			
+		}while(respuesta!=4);
+		
+	}
+
+}

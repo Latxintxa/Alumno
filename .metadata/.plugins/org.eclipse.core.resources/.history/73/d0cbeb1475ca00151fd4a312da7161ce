@@ -1,0 +1,23 @@
+package infoalumnos;
+
+
+
+import java.awt.Menu;
+import java.util.Scanner;
+import Métodos_Paco.metodos_paco;
+
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		metodos_paco menu=new metodos_paco();
+		CreaAlumno a=new CreaAlumno();
+		menu.EjecutableMenuAreas();
+		a.CreaAlumno();
+		
+		
+	}
+
+}

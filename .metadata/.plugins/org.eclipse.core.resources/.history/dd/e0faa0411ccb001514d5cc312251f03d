@@ -1,0 +1,63 @@
+package infoalumnos;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.awt.Menu;
+import Validador_de_DNI.Validador_de_DNI;
+public class Main {
+
+	public static void main(String[] args)
+	{
+		ArrayList<Alumno> ListaAlumnos=new ArrayList<Alumno>();
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		CreaAlumno a=new CreaAlumno();
+		BuscaAlumno buscar=new BuscaAlumno();
+		MuestraAlumno mostrar=new MuestraAlumno();
+		Validador_de_DNI validar=new Validador_de_DNI();
+		int respuesta=0;
+		String dni;
+		do
+		{
+			//Busca el metodo menu Subnormal
+			System.out.println("eliga una opcion:");
+			System.out.println("------------------");
+			System.out.println("1 para crear alumno");
+			System.out.println("2 para mostrar alumnos");
+			System.out.println("3 para buscar por dni");
+			System.out.println("4 para acabar");
+			respuesta=BLS.nextInt();
+			BLS.nextLine();
+			switch(respuesta)
+			{
+				case 1:
+					a.CreaAlumno();
+				break;
+				case 2:
+					
+					break;
+					
+				case 3:
+					do
+					{
+						BLS.nextLine();
+						System.out.println("Introduzca el DNI a buscar");
+						dni=BLS.nextLine();
+						validar.ValidarDNI(dni);
+					
+					}while(!validar.ValidarDNI(dni));
+					buscar.BuscaAlumnoDni(dni);
+				case 4:
+					System.out.println("Fin del programa");
+					break;
+				default:
+					System.out.println("No ha elegido ninguna opcion válida");
+					
+			}
+		}while(respuesta!=4);
+			
+	
+		
+	}
+
+}

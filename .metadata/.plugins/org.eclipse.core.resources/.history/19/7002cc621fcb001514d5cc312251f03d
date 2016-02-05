@@ -1,0 +1,9 @@
+package infoalumnos;
+
+import java.util.ArrayList;
+
+public class BuscaAlumno 
+{
+	ArrayList<Alumno> ListaAlumnos;
+	
+}

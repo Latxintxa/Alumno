@@ -1,0 +1,81 @@
+package infoalumnos;
+import java.util.ArrayList;
+import java.util.Scanner;
+import metodomenu.*;
+import Validador_de_DNI.Validador_de_DNI;
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner BLS=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		Alumno a;
+		Validador_de_DNI val=new Validador_de_DNI();
+		ArrayList<Alumno> ListaAlumnos=new ArrayList<Alumno>();
+		ArrayList<Double> Nota=new ArrayList<Double>();
+	
+		
+		String nombre;
+		String apellido1;
+		String apellido2;
+		String continuar;
+		String DNI;
+		double nota;
+		
+		
+		do
+		{
+			
+			System.out.println("Introduzca nombre:");
+			nombre=BLS.nextLine();
+			
+			System.out.println("Introduzca el primer apellido:");
+			apellido1=BLS.nextLine();
+			
+			System.out.println("Introduzca el segundo apellido");
+			apellido2=BLS.nextLine();
+			do
+			{
+				System.out.println("Introduzca el DNI");
+				DNI=BLS.nextLine();
+			
+			}while(!val.ValidarDNI(DNI));
+			a=new Alumno(nombre,apellido1,apellido2,DNI);
+			
+			do
+			{	//pedir notas
+				System.out.println("introduzca nota(-1 para acabar)");
+				nota=BLS.nextDouble();
+				BLS.nextLine();
+				if(nota<-1||nota>10)
+				{
+					System.out.println("Error,la nota sale de los parametros");
+
+				}else if(nota>0&&nota<=10)
+				{
+					a.añadeNota(nota);
+				}
+				}while(nota!=-1);
+			
+			do
+			{
+				System.out.println("¿Desea continuar Y/N?");
+				continuar=BLS.nextLine().toUpperCase();
+					if(!continuar.equals("Y")&&!continuar.equals("N"))
+					{
+						System.out.println("Error,debe introducir un Y para continuar y N para acabar.");
+					}
+			}while(!continuar.equals("Y")&&!continuar.equals("N"));
+			
+			ListaAlumnos.add(a);
+		}while(continuar.equals("Y"));
+		
+		
+		for(Alumno item: ListaAlumnos)
+		{
+			System.out.println(item.fichaAlumno());
+		}
+
+	}
+
+}
